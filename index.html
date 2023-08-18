@@ -28,16 +28,16 @@
                       <h2 class="text-2xl font-semibold text-center">Triangle</h2>
                       <p class="text-center">Area = 0.5 x b x h</p>
                       <p class="my-3 text-center">
-                        <input type="number" class="border w-20 bg-gray-200 px-2" name="" placeholder="b" id="">
+                        <input type="number" class="border w-20 bg-gray-200 px-2" name="" placeholder="b" id="base">
                       <span class="ml-2">cm</span>
-                      <input type="number" class="border ml-2 w-20 bg-gray-200 px-2" name="" placeholder="h" id="">
+                      <input type="number" class="border ml-2 w-20 bg-gray-200 px-2" name="" placeholder="h" id="height">
                       <span class="ml-2">cm</span>
                       </p>
                       <p class="text-center">
-                        Area: <span>0</span> cm <sup>2</sup> 
+                        Area: <span id="result-triangle">0</span> cm <sup>2</sup> 
                       </p>
                       <div class="card-actions justify-center">
-                        <button class="btn btn-primary">Calculate</button>
+                        <button id="btn-triangle" class="btn btn-primary">Calculate</button>
                       </div>
                     </div>
                 </div>
@@ -49,9 +49,51 @@
                       <h2 class="text-2xl font-semibold text-center">Triangle</h2>
                       <p class="text-center">Area = w x l</p>
                       <p class="my-3 text-center">
-                        <input type="number" class="border w-20 bg-gray-200 px-2" name="" placeholder="w" id="">
+                        <input type="number" class="border w-20 bg-gray-200 px-2" name="" placeholder="w" id="width">
                       <span class="ml-2">cm</span>
-                      <input type="number" class="border ml-2 w-20 bg-gray-200 px-2" name="" placeholder="l" id="">
+                      <input type="number" class="border ml-2 w-20 bg-gray-200 px-2" name="" placeholder="l" id="length">
+                      <span class="ml-2">cm</span>
+                      </p>
+                      <p class="text-center">
+                        Area: <span id="result-rectangle">0</span> cm <sup>2</sup> 
+                      </p>
+                      <div class="card-actions justify-center">
+                        <button id="btn-rectangle" class="btn btn-primary">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+    
+                <!-- parallelogram card -->
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img src="./images/parallelogram.png" alt="" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-2xl font-semibold text-center">Parallelogram</h2>
+                      <p class="text-center">Area = b x h</p>
+                      <p class="my-3 text-center">
+                        <input type="number" class="border w-20 bg-gray-200 px-2" name="" placeholder="b" id="p-base">
+                      <span class="ml-2">cm</span>
+                      <input type="number" class="border ml-2 w-20 bg-gray-200 px-2" name="" placeholder="h" id="p-height">
+                      <span class="ml-2">cm</span>
+                      </p>
+                      <p class="text-center">
+                        Area: <span id="result-parallelogram">0</span> cm <sup>2</sup> 
+                      </p>
+                      <div class="card-actions justify-center">
+                        <button id="btn-parallelogram" class="btn btn-primary">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- rhombus card -->
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img src="./images/rhombus.png" alt="" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-2xl font-semibold text-center">Rhombus</h2>
+                      <p class="text-center">Area = 0.5 x d1 x d2</p>
+                      <p class="my-3 text-center">
+                        <input type="number" class="border w-20 bg-gray-200 px-2" name="" placeholder="d1" id="">
+                      <span class="ml-2">cm</span>
+                      <input type="number" class="border ml-2 w-20 bg-gray-200 px-2" name="" placeholder="d2" id="">
                       <span class="ml-2">cm</span>
                       </p>
                       <p class="text-center">
@@ -62,17 +104,38 @@
                       </div>
                     </div>
                 </div>
-    
-                <!-- parallelogram card -->
+
+                <!-- pentagon card -->
                 <div class="card w-80 bg-base-100 shadow-xl">
-                    <figure><img src="./images/parallelogram.png" alt="" /></figure>
+                    <figure><img src="./images/pentagon.png" alt="" /></figure>
                     <div class="card-body">
-                      <h2 class="text-2xl font-semibold text-center">Triangle</h2>
-                      <p class="text-center">Area = b x h</p>
+                      <h2 class="text-2xl font-semibold text-center">Pentagon</h2>
+                      <p class="text-center">Area = 0.5 x p x a</p>
                       <p class="my-3 text-center">
-                        <input type="number" class="border w-20 bg-gray-200 px-2" name="" placeholder="b" id="">
+                        <input type="number" class="border w-20 bg-gray-200 px-2" name="" placeholder="p" id="">
                       <span class="ml-2">cm</span>
-                      <input type="number" class="border ml-2 w-20 bg-gray-200 px-2" name="" placeholder="h" id="">
+                      <input type="number" class="border ml-2 w-20 bg-gray-200 px-2" name="" placeholder="a" id="">
+                      <span class="ml-2">cm</span>
+                      </p>
+                      <p class="text-center">
+                        Area: <span>0</span> cm <sup>2</sup> 
+                      </p>
+                      <div class="card-actions justify-center">
+                        <button class="btn btn-primary">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- ellipse card -->
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img src="./images/ellipse.png" alt="" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-2xl font-semibold text-center">Ellipse</h2>
+                      <p class="text-center">Area = pi x a x b</p>
+                      <p class="my-3 text-center">
+                        <input type="number" class="border w-20 bg-gray-200 px-2" name="" placeholder="a" id="">
+                      <span class="ml-2">cm</span>
+                      <input type="number" class="border ml-2 w-20 bg-gray-200 px-2" name="" placeholder="b" id="">
                       <span class="ml-2">cm</span>
                       </p>
                       <p class="text-center">
